@@ -15,6 +15,11 @@ fs.stat(fileList, function(err, stat) {
 	let things = JSON.parse(fs.readFileSync(fileList, 'utf8'));
 
 	things.forEach(item => {
+		// Catch any empty items (shit happens)
+		if (!item.source || !item.target) { // not == null
+			return;
+		}
+
 		// If desired, append the source filetype to the target filename
 		if (item.retainFiletype === true) {
 			let fileSplit = item.source.split('.');
@@ -22,6 +27,11 @@ fs.stat(fileList, function(err, stat) {
 		}
 
 		// Remove any invalid characters, such as > which really fewks things up
+		// Japanese unicode etc
+		var invalids = /[\ud800-\udbff][\udc00-\udfff]|[\ud800-\udfff]/g;
+		item.target = item.target.replace(invalids, function ($0) {
+			return $0.length > 1 ? $0 : '\ufffd';
+		});
 		// < > : " ' | ? *
 		item.target = item.target.replace(/<|>|:|"|'|\||\?|\*/g,'');
 
