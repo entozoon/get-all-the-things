@@ -1,6 +1,6 @@
 {
   "name": "get-all-the-things",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Download listed files from a json array",
   "main": "get-all-the-things.js",
   "scripts": {
@@ -20,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/entozoon/get-all-the-things/issues"
   },
-  "homepage": "https://github.com/entozoon/get-all-the-things#readme"
+  "homepage": "https://github.com/entozoon/get-all-the-things#readme",
+  "dependencies": {
+    "mkdirp": "0.5.1",
+    "wget-improved": "1.4.0"
+  }
 }
