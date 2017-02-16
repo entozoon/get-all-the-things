@@ -1,0 +1,24 @@
+{
+  "name": "get-all-the-things",
+  "version": "1.0.1",
+  "description": "Download listed files from a json array",
+  "main": "get-all-the-things.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/entozoon/get-all-the-things.git"
+  },
+  "keywords": [
+    "get",
+    "download",
+    "json"
+  ],
+  "author": "MichaelCook <entozoon@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/entozoon/get-all-the-things/issues"
+  },
+  "homepage": "https://github.com/entozoon/get-all-the-things#readme"
+}
