@@ -14,7 +14,7 @@ For example, my site [MichaelCook.tech](http://michaelcook.tech) parses markdown
 
 ## Run
 
-	node node_modules/get-all-the-things/get-all-the-things.js
+	node node_modules/get-all-the-things
 
 ## Configuration
 
