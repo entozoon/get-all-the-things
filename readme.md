@@ -18,7 +18,7 @@ For example, my site [MichaelCook.tech](http://michaelcook.tech) parses markdown
 
 ## Configuration
 
-You'll need a `get-all-these-things.json` file in your project's root directory with structure similar to:
+You'll need a `get-all-the-things.json` file in your project's root directory with structure similar to:
 
 	[
 		{
